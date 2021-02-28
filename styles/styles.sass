@@ -1,0 +1,171 @@
+$primary: #1e2023
+$accent: #31353a
+$grey: #c4c4c4
+$border: #ddd
+$lightGrey: #f1f1f1
+$white: #fff
+$blue: #3064fb
+    
+*
+    font-weight: 300
+
+.menu
+    background-color: $primary
+    color: $white
+    position: fixed
+    width: 100%
+    display: flex
+    min-height: 60px
+    padding: 0px 2%
+    z-index: 3
+
+    .logo
+        width: 35px
+        vertical-align: middle
+        display: flex
+        align-items: center
+        cursor: pointer
+
+    .menu-item 
+        color: $white
+        transition: 0.3s
+        font-size: 13px
+        padding: 0px 15px
+        height: 100%
+        display: flex
+        align-items: center
+        
+        &:hover
+            background: linear-gradient(#fff0, #ffffff17, #fff0)
+            cursor: pointer
+            
+        
+    .language 
+        font-size: 11px
+        padding-left: 20px
+        padding-right: 10px
+
+
+#page-content
+    padding-top: 60px
+
+
+// Progress
+#progress
+    padding-top: 40px
+
+    .progress-stage
+        display: flex
+
+        .item
+            text-align: center
+            display: flex
+            justify-content: center
+            align-items: baseline
+            position: relative
+
+            .item-border
+                border: 2px solid #0f5132
+                border-radius: 100px
+                padding: 3px
+                background-color: $white
+                z-index: 1
+            
+            .item-second-border
+                border: 4px solid #198754
+                padding: 20px
+                border-radius: 100px
+
+            img
+                max-width: 100px
+
+            .line
+                position: absolute
+                margin: auto
+                background: #198754
+                width: 10px
+                height: 100%
+                z-index: 0
+
+        .image
+            
+            img
+                width: 100%
+
+
+// Knowledges
+#knowledges
+
+
+    .header
+        border: 1px solid $border
+        padding: 10px
+        border-bottom: 0px
+        border-radius: 5px 5px 0px 0px
+
+    .list-topics
+
+        .topic
+            color: $accent
+            padding: 5px 10px
+            cursor: pointer
+
+            &.selected
+                color: $blue
+
+            .bottom
+                background-color: #3064fbbf
+                margin-top: 3px
+                height: 2px
+                width: 100%
+                opacity: 0
+                display: block
+                transition: 0.3s
+        
+            &:hover .bottom
+                opacity: 1
+            
+
+    .content
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        row-gap: 30px
+        border: 1px solid $border
+        padding: 20px 10px
+        background: #f1f1f1
+
+        .card
+            border: 0px
+
+            .card-text
+                font-size: 14px
+
+            .image-container
+                height: 150px
+                text-align: center
+
+                img
+                    max-height: 100%
+                    width: auto
+
+
+// Utilities
+
+.d-flex
+    display: flex
+    justify-content: flex-start
+    align-items: center
+
+.space-between
+    justify-content: space-between
+
+.end
+    justify-content: end
+
+.dark
+    background-color: $primary
+    color: $white
+
+img
+    max-width: 100%
