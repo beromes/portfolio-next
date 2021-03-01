@@ -1,50 +1,10 @@
-$primary: #1e2023
-$accent: #31353a
-$grey: #c4c4c4
-$border: #ddd
-$lightGrey: #f1f1f1
-$white: #fff
-$blue: #3064fb
-    
+@import './env.sass'
+
 *
     font-weight: 300
 
-.menu
+body
     background-color: $primary
-    color: $white
-    position: fixed
-    width: 100%
-    display: flex
-    min-height: 60px
-    padding: 0px 2%
-    z-index: 3
-
-    .logo
-        width: 35px
-        vertical-align: middle
-        display: flex
-        align-items: center
-        cursor: pointer
-
-    .menu-item 
-        color: $white
-        transition: 0.3s
-        font-size: 13px
-        padding: 0px 15px
-        height: 100%
-        display: flex
-        align-items: center
-        
-        &:hover
-            background: linear-gradient(#fff0, #ffffff17, #fff0)
-            cursor: pointer
-            
-        
-    .language 
-        font-size: 11px
-        padding-left: 20px
-        padding-right: 10px
-
 
 #page-content
     padding-top: 60px

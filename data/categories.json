@@ -1,0 +1,43 @@
+[
+    {
+        "name": "web",
+        "english": "Web",
+        "portuguese": "Web"
+    },
+
+    {
+        "name": "mobile",
+        "english": "Mobile",
+        "portuguese": "Mobile"
+    },
+
+    {
+        "name": "backend",
+        "english": "Backend",
+        "portuguese": "Backend"
+    },
+
+    {
+        "name": "database",
+        "english": "Database",
+        "portuguese": "Banco de dados"
+    },
+
+    {
+        "name": "marketing",
+        "english": "Marketing",
+        "portuguese": "Marketing"
+    },
+
+    {
+        "name": "design",
+        "english": "Design",
+        "portuguese": "Design"
+    },
+
+    {
+        "name": "data-science",
+        "english": "Data Science",
+        "portuguese": "Ciência de Dados"
+    }
+]

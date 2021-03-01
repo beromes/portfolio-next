@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Angular",
+        "image": "angular.png",
+        "startDate": "2019-03-01",
+        "category": "web"
+    },
+
+    {
+        "name": "Node Express",
+        "image": "express.png",
+        "startDate": "2019-06-01",
+        "category": "backend"
+    },
+
+    {
+        "name": "Android Studio",
+        "image": "android-studio.png",
+        "startDate": "2019-03-01",
+        "category": "mobile"
+    },
+
+    {
+        "name": "Bootstrap",
+        "image": "bootstrap.png",
+        "startDate": "2019-03-01",
+        "category": "web"
+    }
+];
