@@ -1,7 +1,8 @@
+import Image from 'next/image';
 
 export default function About() {
     return (
-        <div id="about" className="dark d-flex">
+        <div className="dark d-flex">
             <div className="w-50 px-5 py-3">
                 <div>
                     <h2>Sobre Bernardo</h2>
@@ -14,7 +15,7 @@ export default function About() {
                 </div>
             </div>
             <div className="w-50">
-                <img src="https://picsum.photos/600/400" alt="Bernardo Gomes Nunes" className="w-100" />
+                <Image src="https://picsum.photos/600/400" alt="Bernardo Gomes Nunes" width={600} height={400} layout="responsive" />
             </div>
         </div>
     )

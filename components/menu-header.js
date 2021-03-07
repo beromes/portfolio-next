@@ -1,11 +1,30 @@
 import Image from 'next/image'
 import styles from '../styles/menu-header.module.sass'
+import { useEffect, useState } from "react";
 
 export default function MenuHeader() {
 
+    const [isShadowVisible, setIsShadowVisible] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = e => {            
+            setIsShadowVisible(e.target.documentElement.scrollTop > 0);
+        };
+
+        if (document) {
+            document.addEventListener("scroll", handleScroll);
+        }
+
+        return () => {
+            if (document) {
+                document.removeEventListener("scroll", handleScroll);
+            }
+        };
+    }, [setIsShadowVisible]);
+
     return (
         <>
-            <div className={`${styles.menu} space-between`}>
+            <div className={`${styles.menu} ${ isShadowVisible && styles.shadow } space-between`}>
                 <div className={styles.logo}>
                     <Image 
                         src="/images/logo-white.svg" 

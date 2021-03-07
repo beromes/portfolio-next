@@ -1,0 +1,35 @@
+@import './env.sass'
+
+.progressStage
+    display: flex
+
+    .item
+        text-align: center
+        display: flex
+        justify-content: center
+        align-items: baseline
+        position: relative
+
+        .itemBorder
+            border: 2px solid #0f5132
+            border-radius: 100px
+            padding: 3px
+            background-color: $white
+            z-index: 1
+        
+        .itemSecondBorder
+            border: 4px solid #198754
+            padding: 20px
+            border-radius: 100px
+
+        img
+            max-width: 100px
+
+        .line
+            position: absolute
+            margin: auto
+            background: #198754
+            width: 10px
+            height: 100%
+            z-index: 0
+

@@ -1,56 +1,20 @@
 @import './env.sass'
 
+html, body
+  padding: 0
+  margin: 0
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif
+
+a
+  color: inherit
+  text-decoration: none
+
 *
     font-weight: 300
+    box-sizing: border-box
 
 body
     background-color: $primary
-
-#page-content
-    padding-top: 60px
-
-
-// Progress
-#progress
-    padding-top: 40px
-
-    .progress-stage
-        display: flex
-
-        .item
-            text-align: center
-            display: flex
-            justify-content: center
-            align-items: baseline
-            position: relative
-
-            .item-border
-                border: 2px solid #0f5132
-                border-radius: 100px
-                padding: 3px
-                background-color: $white
-                z-index: 1
-            
-            .item-second-border
-                border: 4px solid #198754
-                padding: 20px
-                border-radius: 100px
-
-            img
-                max-width: 100px
-
-            .line
-                position: absolute
-                margin: auto
-                background: #198754
-                width: 10px
-                height: 100%
-                z-index: 0
-
-        .image
-            
-            img
-                width: 100%
 
 
 // Knowledges
